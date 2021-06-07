@@ -1,7 +1,11 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
 const path = require("path");
-const generateMarkdown = require("./utils/generateMarkdown")
+const generateMarkdown = require("./utils/generateMarkdown");
+
+function writeToFile(fileName, data) {
+    fs.writeFileSync(path.join(process.cwd(), fileName), data);
+};
 
 function init() {
     inquirer.prompt([
@@ -70,8 +74,5 @@ function init() {
         writeToFile("README.md", generateMarkdown({...responses}));
     })
 };
-
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
 
 init();
