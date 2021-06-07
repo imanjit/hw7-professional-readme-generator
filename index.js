@@ -37,6 +37,16 @@ const questions = [
         default: "npm test",
     },
     {
+        type: "input",
+        name: "usage",
+        message: "Usage instructions for user?"
+    },
+    {
+        type: "input",
+        name: "contribution",
+        message: "Contribution instructions for user?"
+    },
+    {
         type: "list",
         name: "license",
         message: "Project license?",
