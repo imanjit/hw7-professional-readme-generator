@@ -21,7 +21,8 @@ function generateMarkdown(data) {
   - [Testing](#testing)
   - [Usage](#usage)
   - [Contribution](#contribution)
-  - [Contact](#contact)  
+  - [Contact](#contact)
+  - [License](#license)  
 
   ### Description
   ---
@@ -42,11 +43,16 @@ function generateMarkdown(data) {
   ### Contribution
   ---
   ${data.contribution}
+  
+  ### License
+  ---
+  ${data.license}
 
   ### Contact
   ---
   [GitHub] (https://github.com/${data.github})
   ${data.email}
+
 
 `;
 }
